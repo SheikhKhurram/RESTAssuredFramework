@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-10-15T20:14:36Z" name="Default suite" finished-at="2018-10-15T20:14:40Z" duration-ms="4237">
+    <groups>
+    </groups>
+    <test started-at="2018-10-15T20:14:36Z" name="Default test" finished-at="2018-10-15T20:14:40Z" duration-ms="4237">
+      <class name="GettingSessionID.GettingSessionID">
+        <test-method is-config="true" signature="gettingSessionID_setup()[pri:0, instance:GettingSessionID.GettingSessionID@175b9425]" started-at="2018-10-15T20:14:36Z" name="gettingSessionID_setup" finished-at="2018-10-15T20:14:36Z" duration-ms="480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gettingSessionID_setup -->
+        <test-method signature="gettingSessionID_POST_Request()[pri:0, instance:GettingSessionID.GettingSessionID@175b9425]" started-at="2018-10-15T20:14:36Z" name="gettingSessionID_POST_Request" finished-at="2018-10-15T20:14:40Z" duration-ms="3694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gettingSessionID_POST_Request -->
+      </class> <!-- GettingSessionID.GettingSessionID -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
