@@ -1,8 +1,9 @@
 package Utilities;
 
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
-public class ResponseTime 
+public class UtilityMethods 
 {
      
 	public static long getResponseTime(Response reponse)
@@ -19,5 +20,14 @@ public class ResponseTime
 	{
 		return response.body().jsonPath().get(jsonPath);
 	}
+	
+	public static String getKey(Response response)
+	{
+		JsonPath json = response.jsonPath();
+		String name = json.getString("session.name");
+		String value = json.getString("session.value");
+		return name+"="+value;
+	}
+	
 	
 }

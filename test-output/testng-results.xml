@@ -1,21 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-10-15T20:14:36Z" name="Default suite" finished-at="2018-10-15T20:14:40Z" duration-ms="4237">
+  <suite started-at="2018-10-17T04:11:09Z" name="Default suite" finished-at="2018-10-17T04:11:17Z" duration-ms="7486">
     <groups>
     </groups>
-    <test started-at="2018-10-15T20:14:36Z" name="Default test" finished-at="2018-10-15T20:14:40Z" duration-ms="4237">
-      <class name="GettingSessionID.GettingSessionID">
-        <test-method is-config="true" signature="gettingSessionID_setup()[pri:0, instance:GettingSessionID.GettingSessionID@175b9425]" started-at="2018-10-15T20:14:36Z" name="gettingSessionID_setup" finished-at="2018-10-15T20:14:36Z" duration-ms="480" status="PASS">
+    <test started-at="2018-10-17T04:11:09Z" name="Default test" finished-at="2018-10-17T04:11:17Z" duration-ms="7486">
+      <class name="TestCases.ValidatingCreatingBug">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.ValidatingCreatingBug@11fc564b]" started-at="2018-10-17T04:11:09Z" name="setUp" finished-at="2018-10-17T04:11:15Z" duration-ms="5418" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- gettingSessionID_setup -->
-        <test-method signature="gettingSessionID_POST_Request()[pri:0, instance:GettingSessionID.GettingSessionID@175b9425]" started-at="2018-10-15T20:14:36Z" name="gettingSessionID_POST_Request" finished-at="2018-10-15T20:14:40Z" duration-ms="3694" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="validating_SessionID_StatusResponseTime()[pri:0, instance:TestCases.ValidatingCreatingBug@11fc564b]" started-at="2018-10-17T04:11:15Z" name="validating_SessionID_StatusResponseTime" finished-at="2018-10-17T04:11:15Z" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- gettingSessionID_POST_Request -->
-      </class> <!-- GettingSessionID.GettingSessionID -->
+        </test-method> <!-- validating_SessionID_StatusResponseTime -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.ValidatingCreatingBug@11fc564b]" started-at="2018-10-17T04:11:15Z" name="setUp" finished-at="2018-10-17T04:11:16Z" duration-ms="990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validating_Session_ID_StatusCode()[pri:0, instance:TestCases.ValidatingCreatingBug@11fc564b]" started-at="2018-10-17T04:11:16Z" name="validating_Session_ID_StatusCode" finished-at="2018-10-17T04:11:16Z" duration-ms="19" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Status code is not 201 expected [201] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Status code is not 201 expected [201] but found [404]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at TestCases.ValidatingCreatingBug.validating_Session_ID_StatusCode(ValidatingCreatingBug.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validating_Session_ID_StatusCode -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.ValidatingCreatingBug@11fc564b]" started-at="2018-10-17T04:11:16Z" name="setUp" finished-at="2018-10-17T04:11:17Z" duration-ms="917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validating_jsonSchema()[pri:0, instance:TestCases.ValidatingCreatingBug@11fc564b]" started-at="2018-10-17T04:11:17Z" name="validating_jsonSchema" finished-at="2018-10-17T04:11:17Z" duration-ms="16" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Schema to use cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Schema to use cannot be null
+at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+at TestCases.ValidatingCreatingBug.validating_jsonSchema(ValidatingCreatingBug.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validating_jsonSchema -->
+      </class> <!-- TestCases.ValidatingCreatingBug -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
