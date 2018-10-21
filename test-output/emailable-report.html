@@ -9,17 +9,15 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">7,486</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">16,914</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">TestCases.ValidatingCreatingBug</td><td><a href="#m0">validating_Session_ID_StatusCode</a></td><td rowspan="1">1539749476137</td><td rowspan="1">19</td></tr><tr class="failedeven"><td><a href="#m1">validating_jsonSchema</a></td><td rowspan="1">1539749477105</td><td rowspan="1">16</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCases.ValidatingCreatingBug</td><td><a href="#m2">validating_SessionID_StatusResponseTime</a></td><td rowspan="1">1539749475084</td><td rowspan="1">47</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">TestCases.ValidatingCreatingBug</td><td><a href="#m0">validating_SessionID_StatusResponseTime</a></td><td rowspan="1">1540095314989</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m1">validating_jsonSchema</a></td><td rowspan="1">1540095315020</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCases.ValidatingCreatingBug</td><td><a href="#m2">validating_Session_ID_StatusCode</a></td><td rowspan="1">1540095315004</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">TestCases.ValidatingCreatingBug#validating_Session_ID_StatusCode</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Status code is not 201 expected [201] but found [404]
+<h2>Default test</h2><h3 id="m0">TestCases.ValidatingCreatingBug#validating_SessionID_StatusResponseTime</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Reponse time more than 400ms expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:652)
-	at TestCases.ValidatingCreatingBug.validating_Session_ID_StatusCode(ValidatingCreatingBug.java:36)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at TestCases.ValidatingCreatingBug.validating_SessionID_StatusResponseTime(ValidatingCreatingBug.java:54)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -52,7 +50,7 @@
 	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
 	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
 	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
-	at TestCases.ValidatingCreatingBug.validating_jsonSchema(ValidatingCreatingBug.java:49)
+	at TestCases.ValidatingCreatingBug.validating_jsonSchema(ValidatingCreatingBug.java:62)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -79,6 +77,6 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">TestCases.ValidatingCreatingBug#validating_SessionID_StatusResponseTime</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestCases.ValidatingCreatingBug#validating_Session_ID_StatusCode</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

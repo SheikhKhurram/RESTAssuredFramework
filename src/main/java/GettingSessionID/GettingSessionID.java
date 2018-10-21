@@ -22,14 +22,13 @@ public class GettingSessionID
 	private Response response;
 	
 	
-	
 //	public void gettingSessionID_setup()
 //	{
 //		setEndPoint = new SetEndPoint();
 //		setEndPoint.setEndPoint();
 //	}
 //	
-   
+     
 	public Response gettingSessionID_POST_Request()
 	{
 	

@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\khurram\AppData\Local\Temp\testng-eclipse-1319311977\testng-customsuite.xml</span>
+                    <span>C:\Users\khurram\AppData\Local\Temp\testng-eclipse-2114366887\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="TestCases.ValidatingCreatingBug" class="method navigator-link" hash-for-method="validating_Session_ID_StatusCode">validating_Session_ID_StatusCode</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="TestCases.ValidatingCreatingBug" class="method navigator-link" hash-for-method="validating_SessionID_StatusResponseTime">validating_SessionID_StatusResponseTime</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -121,7 +121,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="TestCases.ValidatingCreatingBug" class="method navigator-link" hash-for-method="validating_SessionID_StatusResponseTime">validating_SessionID_StatusResponseTime</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="TestCases.ValidatingCreatingBug" class="method navigator-link" hash-for-method="validating_Session_ID_StatusCode">validating_Session_ID_StatusCode</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -144,16 +144,14 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validating_Session_ID_StatusCode">
-                  </a> <!-- validating_Session_ID_StatusCode -->
-                  <span class="method-name">validating_Session_ID_StatusCode</span>
-                  <div class="stack-trace">java.lang.AssertionError: Status code is not 201 expected [201] but found [404]
+                  <a name="validating_SessionID_StatusResponseTime">
+                  </a> <!-- validating_SessionID_StatusResponseTime -->
+                  <span class="method-name">validating_SessionID_StatusResponseTime</span>
+                  <div class="stack-trace">java.lang.AssertionError: Reponse time more than 400ms expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:652)
-	at TestCases.ValidatingCreatingBug.validating_Session_ID_StatusCode(ValidatingCreatingBug.java:36)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at TestCases.ValidatingCreatingBug.validating_SessionID_StatusResponseTime(ValidatingCreatingBug.java:54)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -194,7 +192,7 @@
 	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
 	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
 	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
-	at TestCases.ValidatingCreatingBug.validating_jsonSchema(ValidatingCreatingBug.java:49)
+	at TestCases.ValidatingCreatingBug.validating_jsonSchema(ValidatingCreatingBug.java:62)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -234,9 +232,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validating_SessionID_StatusResponseTime">
-                  </a> <!-- validating_SessionID_StatusResponseTime -->
-                  <span class="method-name">validating_SessionID_StatusResponseTime</span>
+                  <a name="validating_Session_ID_StatusCode">
+                  </a> <!-- validating_Session_ID_StatusCode -->
+                  <span class="method-name">validating_Session_ID_StatusCode</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -244,7 +242,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\khurram\AppData\Local\Temp\testng-eclipse-1319311977\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\khurram\AppData\Local\Temp\testng-eclipse-2114366887\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -295,22 +293,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validating_SessionID_StatusResponseTime')
+data.setCell(0, 1, 'validating_Session_ID_StatusCode')
 data.setCell(0, 2, 'TestCases.ValidatingCreatingBug')
-data.setCell(0, 3, 47);
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validating_Session_ID_StatusCode')
+data.setCell(1, 1, 'validating_SessionID_StatusResponseTime')
 data.setCell(1, 2, 'TestCases.ValidatingCreatingBug')
-data.setCell(1, 3, 19);
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'validating_jsonSchema')
 data.setCell(2, 2, 'TestCases.ValidatingCreatingBug')
-data.setCell(2, 3, 16);
+data.setCell(2, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 82 ms</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -337,33 +335,25 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.ValidatingCreatingBug</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
+              <div class="configuration-test before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validating_SessionID_StatusResponseTime</span>
-                <span class="method-start">5418 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">5481 ms</span>
-              </div> <!-- configuration-method before -->
+              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">validating_Session_ID_StatusCode</span>
-                <span class="method-start">6471 ms</span>
+                <span class="method-name">validating_SessionID_StatusResponseTime</span>
+                <span class="method-start">16867 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">6522 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validating_Session_ID_StatusCode</span>
+                <span class="method-start">16882 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">validating_jsonSchema</span>
-                <span class="method-start">7439 ms</span>
+                <span class="method-start">16898 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

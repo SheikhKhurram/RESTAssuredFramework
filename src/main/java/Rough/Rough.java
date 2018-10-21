@@ -1,27 +1,38 @@
-package CreatingBug;
+package Rough;
 
-import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
 import GettingSessionID.GettingSessionID;
 import Utilities.UtilityMethods;
 import io.restassured.http.ContentType;
-import java.util.HashMap;
-import java.util.Map;
+import io.restassured.response.Response;
 
-import org.testng.annotations.Test;
-public class CreatingJiraBug 
+public class Rough 
 {
-      Response response;
-      GettingSessionID gettingSessionID = new GettingSessionID();
-       
       
-      
-	public Response creatingBug(String sessionKey)
+	Response response; 
+	String key;
+	
+	@BeforeMethod
+	public void setup ()
+	{
+		GettingSessionID get = new GettingSessionID();
+		response = get.gettingSessionID_POST_Request();
+		key = UtilityMethods.getKey(response);	
+		System.out.println(key );
+	}
+
+	
+	@Test
+	public void test()
 	{
 		response = 
 				given().
-					contentType(ContentType.JSON)
-					.header("cookie" , sessionKey)
+				header("Cookie", key).
+				header("Content-Type" , "application/json")
 					.body("{\r\n" + 
 							" \"fields\": {\r\n" + 
 							"        \"project\": {\r\n" + 
@@ -41,13 +52,10 @@ public class CreatingJiraBug
 							"    }\r\n" + 
 							"}")
 				.when()
-					.post("rest/api/2/issue")
-				.then().log().body()
+					.post("/api/2/issue")
+				.then().log().all()
 					.extract().response();
 		
-		 // System.out.println(UtilityMethods.getKey(gettingSessionID.gettingSessionID_POST_Request();
-		return response;
 	}
-	
 	
 }

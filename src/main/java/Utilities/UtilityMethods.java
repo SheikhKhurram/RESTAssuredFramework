@@ -25,7 +25,9 @@ public class UtilityMethods
 	{
 		JsonPath json = response.jsonPath();
 		String name = json.getString("session.name");
+		System.out.println(name);
 		String value = json.getString("session.value");
+		System.out.println(value);
 		return name+"="+value;
 	}
 	

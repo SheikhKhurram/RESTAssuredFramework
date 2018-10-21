@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 17 09:41:09 IST 2018</td>
+<td>Started on:</td><td>Sun Oct 21 09:44:58 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>7 seconds (7486 ms)</td>
+<tr><td>Total time:</td><td>16 seconds (16914 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestCases.ValidatingCreatingBug.validating_Session_ID_StatusCode()'><b>validating_Session_ID_StatusCode</b><br>Test class: TestCases.ValidatingCreatingBug</td>
-<td><div><pre>java.lang.AssertionError: Status code is not 201 expected [201] but found [404]
+<td title='TestCases.ValidatingCreatingBug.validating_SessionID_StatusResponseTime()'><b>validating_SessionID_StatusResponseTime</b><br>Test class: TestCases.ValidatingCreatingBug</td>
+<td><div><pre>java.lang.AssertionError: Reponse time more than 400ms expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:652)
-	at TestCases.ValidatingCreatingBug.validating_Session_ID_StatusCode(ValidatingCreatingBug.java:36)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at TestCases.ValidatingCreatingBug.validating_SessionID_StatusResponseTime(ValidatingCreatingBug.java:54)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -108,14 +106,12 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace163015520", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace163015520'><pre>java.lang.AssertionError: Status code is not 201 expected [201] but found [404]
+</pre></div><a href='#' onClick='toggleBox("stack-trace917131986", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace917131986'><pre>java.lang.AssertionError: Reponse time more than 400ms expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:652)
-	at TestCases.ValidatingCreatingBug.validating_Session_ID_StatusCode(ValidatingCreatingBug.java:36)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at TestCases.ValidatingCreatingBug.validating_SessionID_StatusResponseTime(ValidatingCreatingBug.java:54)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -143,7 +139,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>TestCases.ValidatingCreatingBug@11fc564b</td></tr>
+<td>TestCases.ValidatingCreatingBug@76ed1b7c</td></tr>
 <tr>
 <td title='TestCases.ValidatingCreatingBug.validating_jsonSchema()'><b>validating_jsonSchema</b><br>Test class: TestCases.ValidatingCreatingBug</td>
 <td><div><pre>java.lang.IllegalArgumentException: Schema to use cannot be null
@@ -152,7 +148,7 @@ function toggleAllBoxes() {
 	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
 	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
 	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
-	at TestCases.ValidatingCreatingBug.validating_jsonSchema(ValidatingCreatingBug.java:49)
+	at TestCases.ValidatingCreatingBug.validating_jsonSchema(ValidatingCreatingBug.java:62)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -178,14 +174,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1459040434", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1459040434'><pre>java.lang.IllegalArgumentException: Schema to use cannot be null
+</pre></div><a href='#' onClick='toggleBox("stack-trace1874919946", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1874919946'><pre>java.lang.IllegalArgumentException: Schema to use cannot be null
 	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
 	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
 	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
 	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
 	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
-	at TestCases.ValidatingCreatingBug.validating_jsonSchema(ValidatingCreatingBug.java:49)
+	at TestCases.ValidatingCreatingBug.validating_jsonSchema(ValidatingCreatingBug.java:62)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -213,7 +209,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>TestCases.ValidatingCreatingBug@11fc564b</td></tr>
+<td>TestCases.ValidatingCreatingBug@76ed1b7c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -223,10 +219,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestCases.ValidatingCreatingBug.validating_SessionID_StatusResponseTime()'><b>validating_SessionID_StatusResponseTime</b><br>Test class: TestCases.ValidatingCreatingBug</td>
+<td title='TestCases.ValidatingCreatingBug.validating_Session_ID_StatusCode()'><b>validating_Session_ID_StatusCode</b><br>Test class: TestCases.ValidatingCreatingBug</td>
 <td></td>
 <td>0</td>
-<td>TestCases.ValidatingCreatingBug@11fc564b</td></tr>
+<td>TestCases.ValidatingCreatingBug@76ed1b7c</td></tr>
 </table><p>
 </body>
 </html>

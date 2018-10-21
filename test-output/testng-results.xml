@@ -2,36 +2,26 @@
 <testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-10-17T04:11:09Z" name="Default suite" finished-at="2018-10-17T04:11:17Z" duration-ms="7486">
+  <suite started-at="2018-10-21T04:14:58Z" name="Default suite" finished-at="2018-10-21T04:15:15Z" duration-ms="16914">
     <groups>
     </groups>
-    <test started-at="2018-10-17T04:11:09Z" name="Default test" finished-at="2018-10-17T04:11:17Z" duration-ms="7486">
+    <test started-at="2018-10-21T04:14:58Z" name="Default test" finished-at="2018-10-21T04:15:15Z" duration-ms="16914">
       <class name="TestCases.ValidatingCreatingBug">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.ValidatingCreatingBug@11fc564b]" started-at="2018-10-17T04:11:09Z" name="setUp" finished-at="2018-10-17T04:11:15Z" duration-ms="5418" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.ValidatingCreatingBug@76ed1b7c]" started-at="2018-10-21T04:14:58Z" name="setUp" finished-at="2018-10-21T04:15:14Z" duration-ms="16793" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validating_SessionID_StatusResponseTime()[pri:0, instance:TestCases.ValidatingCreatingBug@11fc564b]" started-at="2018-10-17T04:11:15Z" name="validating_SessionID_StatusResponseTime" finished-at="2018-10-17T04:11:15Z" duration-ms="47" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validating_SessionID_StatusResponseTime -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.ValidatingCreatingBug@11fc564b]" started-at="2018-10-17T04:11:15Z" name="setUp" finished-at="2018-10-17T04:11:16Z" duration-ms="990" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validating_Session_ID_StatusCode()[pri:0, instance:TestCases.ValidatingCreatingBug@11fc564b]" started-at="2018-10-17T04:11:16Z" name="validating_Session_ID_StatusCode" finished-at="2018-10-17T04:11:16Z" duration-ms="19" status="FAIL">
+        <test-method signature="validating_SessionID_StatusResponseTime()[pri:0, instance:TestCases.ValidatingCreatingBug@76ed1b7c]" started-at="2018-10-21T04:15:14Z" name="validating_SessionID_StatusResponseTime" finished-at="2018-10-21T04:15:14Z" duration-ms="0" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Status code is not 201 expected [201] but found [404]]]>
+              <![CDATA[Reponse time more than 400ms expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Status code is not 201 expected [201] but found [404]
+              <![CDATA[java.lang.AssertionError: Reponse time more than 400ms expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:652)
-at TestCases.ValidatingCreatingBug.validating_Session_ID_StatusCode(ValidatingCreatingBug.java:36)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at TestCases.ValidatingCreatingBug.validating_SessionID_StatusResponseTime(ValidatingCreatingBug.java:54)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -62,12 +52,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validating_Session_ID_StatusCode -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.ValidatingCreatingBug@11fc564b]" started-at="2018-10-17T04:11:16Z" name="setUp" finished-at="2018-10-17T04:11:17Z" duration-ms="917" status="PASS">
+        </test-method> <!-- validating_SessionID_StatusResponseTime -->
+        <test-method signature="validating_Session_ID_StatusCode()[pri:0, instance:TestCases.ValidatingCreatingBug@76ed1b7c]" started-at="2018-10-21T04:15:15Z" name="validating_Session_ID_StatusCode" finished-at="2018-10-21T04:15:15Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validating_jsonSchema()[pri:0, instance:TestCases.ValidatingCreatingBug@11fc564b]" started-at="2018-10-17T04:11:17Z" name="validating_jsonSchema" finished-at="2018-10-17T04:11:17Z" duration-ms="16" status="FAIL">
+        </test-method> <!-- validating_Session_ID_StatusCode -->
+        <test-method signature="validating_jsonSchema()[pri:0, instance:TestCases.ValidatingCreatingBug@76ed1b7c]" started-at="2018-10-21T04:15:15Z" name="validating_jsonSchema" finished-at="2018-10-21T04:15:15Z" duration-ms="0" status="FAIL">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Schema to use cannot be null]]>
@@ -79,7 +69,7 @@ at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.
 at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
 at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
 at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
-at TestCases.ValidatingCreatingBug.validating_jsonSchema(ValidatingCreatingBug.java:49)
+at TestCases.ValidatingCreatingBug.validating_jsonSchema(ValidatingCreatingBug.java:62)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
