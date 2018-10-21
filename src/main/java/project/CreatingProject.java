@@ -28,6 +28,8 @@ public class CreatingProject
 //				given()
 //					.accept(ContentType.JSON)
 //					.header("cookie" , UtilityMethods.getKey(sessionKeyResponse))
+//					
+//			 .when().get().thenReturn().
 //				
 //	    		 
 //	}

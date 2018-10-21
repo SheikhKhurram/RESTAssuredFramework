@@ -5,7 +5,6 @@
     <classes>
       <class name="TestCases.ValidatingCreatingBug">
         <methods>
-          <include name="validating_SessionID_StatusResponseTime"/>
           <include name="setUp"/>
           <include name="validating_jsonSchema"/>
         </methods>

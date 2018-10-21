@@ -9,6 +9,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.testng.annotations.Test;
+
+import com.sun.org.apache.bcel.internal.classfile.JavaClass;
 public class CreatingJiraBug 
 {
       Response response;
@@ -44,7 +46,7 @@ public class CreatingJiraBug
 					.post("rest/api/2/issue")
 				.then().log().body()
 					.extract().response();
-		
+		response.as(JavaObjectValidation.class);
 		 // System.out.println(UtilityMethods.getKey(gettingSessionID.gettingSessionID_POST_Request();
 		return response;
 	}

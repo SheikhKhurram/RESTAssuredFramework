@@ -2,9 +2,12 @@ package Rough;
 
 import static io.restassured.RestAssured.given;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import CreatingBug.JavaObjectValidation;
 import GettingSessionID.GettingSessionID;
 import Utilities.UtilityMethods;
 import io.restassured.http.ContentType;
@@ -15,18 +18,20 @@ public class Rough
       
 	Response response; 
 	String key;
+	JavaObjectValidation j;
 	
-	@BeforeMethod
+	@BeforeTest
 	public void setup ()
 	{
 		GettingSessionID get = new GettingSessionID();
 		response = get.gettingSessionID_POST_Request();
 		key = UtilityMethods.getKey(response);	
-		System.out.println(key );
+		 j = new JavaObjectValidation();
+		//System.out.println(key );
 	}
 
 	
-	@Test
+	@Test (priority = 1)
 	public void test()
 	{
 		response = 
@@ -52,10 +57,18 @@ public class Rough
 							"    }\r\n" + 
 							"}")
 				.when()
-					.post("/api/2/issue")
-				.then().log().all()
+					.post("rest/api/2/issue")
+				.then()
 					.extract().response();
 		
+		j = response.as(JavaObjectValidation.class);
+		
+	}
+	
+	@Test(priority = 2)
+	public void validatingId()
+	{
+		Assert.assertEquals( j.getId(), "10227");
 	}
 	
 }

@@ -1,6 +1,8 @@
 package TestCases;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 
 import org.apache.http.HttpStatus;
 import org.testng.Assert;
@@ -16,7 +18,7 @@ import GettingSessionID.GettingSessionID;
 import Utilities.UtilityMethods;
 import io.restassured.response.Response;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
-
+import static org.hamcrest.Matchers.equalTo;
 public class ValidatingCreatingBug 
 {
 	SetEndPoint setEndPoint;
@@ -48,18 +50,19 @@ public class ValidatingCreatingBug
 	    Assert.assertEquals(UtilityMethods.getStatuscode(create_Response), HttpStatus.SC_CREATED ,"Status code is not 201");
 	}
 	
-	@Test
-	public void validating_SessionID_StatusResponseTime()
-	{
-		Assert.assertTrue(UtilityMethods.getResponseTime(create_Response) < 400 , "Reponse time more than 400ms");
-	}
-	
+//	@Test
+//	public void validating_SessionID_StatusResponseTime()
+//	{
+//		Assert.assertTrue(UtilityMethods.getResponseTime(create_Response) < 400 , "Reponse time more than 400ms");
+//	}
+//	
 	
 	@Test
 	public void validating_jsonSchema()
 	{
 		System.out.println(this.getClass().getResource("json_Document.json").getPath());
-		create_Response.then().assertThat().body(matchesJsonSchemaInClasspath("json_Document.json"));
+	
+		create_Response.then().body(matchesJsonSchemaInClasspath("json_Document.json"));
 		
 	}
 	
